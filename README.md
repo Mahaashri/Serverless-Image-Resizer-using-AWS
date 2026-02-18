@@ -83,3 +83,37 @@ This project demonstrates how scalable, serverless applications can be built usi
 
 
 
+**Setup & Installation**
+1️⃣ Clone the Repository
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+
+2️⃣ Install Dependencies
+npm install
+If installing manually:
+npm install aws-sdk
+npm install jimp@0.16.1
+
+3️⃣ Create Deployment ZIP for AWS Lambda
+Make sure the folder contains:
+index.js
+package.json
+node_modules/
+Then compress them into:
+package.zip
+
+Upload this ZIP file to AWS Lambda.
+
+4️⃣ Environment Variable (Important)
+
+In AWS Lambda → Configuration → Environment variables
+Add:
+DEST_BUCKET=your-destination-bucket-name
+
+▶️ Run Locally (Optional Testing)
+To test locally with a mock event:
+node index.js
+(You may need to simulate an S3 event JSON if testing locally.)
+
+
+
