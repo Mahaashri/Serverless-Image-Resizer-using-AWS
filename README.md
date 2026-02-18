@@ -1,4 +1,4 @@
-<img width="1513" height="674" alt="Output" src="https://github.com/user-attachments/assets/8917742d-763d-4576-8314-9adfc6a7009c" />**Serverless Image Resizer using AWS**
+**Serverless Image Resizer using AWS**
 **Overview:**
 This project is a fully serverless image processing application built on AWS.
 It automatically resizes images when they are uploaded to an S3 bucket.
@@ -31,11 +31,13 @@ AWS SDK
 Amazon S3
 AWS Lambda
 
-📂 Project Structure
-├── index.js
-├── package.json
-├── node_modules/
-└── README.md
+
+**Project Structure**
+
+index.js
+package.json
+node_modules/
+README.md
 
 **4) Lambda Configuration**
 
